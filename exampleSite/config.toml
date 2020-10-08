@@ -1,0 +1,155 @@
+baseURL = "/"
+title   = "Timeline"
+languageCode = "en-us"
+theme = "timeline"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a MIT License." 
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "timeline"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Timeline hugo template for your work experience, researches, achievement and more"
+  keywords = "timeline hugo template"
+  images = [""]
+
+  homeSubtitle = "timeline template for hugo"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Sharing buttons
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = ["css/custom.css"]
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "#"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "#"
+
+  [[params.social]]
+    name = "facebook"
+    url  = "#"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "#"
+
+  [[params.social]]
+    name = "github"
+    url  = "#"
+
+  [[params.social]]
+    name = "reddit"
+    url  = "#"
+
+  [[params.social]]
+    name = "keybase"
+    url  = "#"
+
+[languages]
+  [languages.en]
+    subtitle  = "Timeline"
+    weight    = 1
+    copyright = ''
+
+  [languages.fr]
+    subtitle  = "Timeline"
+    weight    = 2
+    copyright = '<a href="https://github.com/s4n7h0/hugo-theme-timeline/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "timeline"
+    name       = "Timeline"
+    url        = "timeline/"
+    weight     = 1
+ 
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,17 @@
+name = "timeline"
+license = "MIT"
+licenselink = "https://github.com/s4n7h0/hugo-theme-timeline/blob/main/LICENSE"
+description = "A timeline theme for Hugo. inspired by hello-friend-ng."
+tags = ["customizable", "dark", "light", "minimal", "personal", "responsive", "simple", "technical", "timeline"]
+features = ["timeline"]
+min_version = 0.01
+
+[author]
+  name = "Sanoop Thomas"
+  homepage = "https://devilslab.in/"
+  twitter = "https://twitter.com/s4n7h0"
+
+[inspiration]
+  name = "hello-friend"
+  homepage = "https://github.com/panr/hugo-theme-hello-friend"
+  repo = "https://github.com/panr/hugo-theme-hello-friend"

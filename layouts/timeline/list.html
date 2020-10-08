@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ $paginator := .Paginate .Data.Pages }}
+
+
+<main class="posts">
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Content }}
+    <div class="content">{{ .Content }}</div>
+    {{ end }}
+
+    <section class="timeline">
+      <div class="container" style="text-align: left!important">
+        {{ range .Pages.ByDate.Reverse  }} 
+
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+
+            <div class="timeline-content js--fadeInLeft">
+                <h2><a href="{{.Permalink}}"><span class="post-title">{{.Title}}</span></a></h2>
+                <div class="date">{{ .Date.Format "Jan 2, 2006"}}</div>
+                <p>
+                    {{.Params.Eventname}}<br>
+                    {{.Params.Eventlocation}}
+
+                </p> 
+            </div>
+        </div>  
+        {{ end }}   
+    </div>
+</section>
+
+
+
+</main>
+{{ end }}
