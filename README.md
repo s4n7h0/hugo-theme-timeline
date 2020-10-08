@@ -20,4 +20,4 @@ git clone https://github.com/s4n7h0/hugo-theme-timeline.git themes/timeline
 
 ### Credits and License 
 
-The theme is heavily inspired by hello-friend-ng modified work by Djordje Atlialp. The theme is released under the MIT License.  
+The theme is heavily inspired by hello-friend-ng hugo theme, a modified work by Djordje Atlialp. The theme is released under the MIT License.  
