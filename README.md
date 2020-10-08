@@ -7,7 +7,8 @@ Simple hugo theme to display your timeline.
 
 * dark/light mode, default is black. 
 * customizable timeline options.
-* minimal design 
+* automatic timeline sorting based on the date (latest one shows first).
+* minimal design. 
 
 ### Usage 
 
