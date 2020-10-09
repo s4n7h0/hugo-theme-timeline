@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://example.com"
 title   = "Timeline"
 languageCode = "en-us"
 theme = "timeline"
