@@ -1,7 +1,7 @@
 # hugo-theme-timeline
 Simple hugo theme to display your timeline.
 
-![Screenshot](https://github.com/s4n7h0/hugo-theme-timeline/blob/main/images/screenshot.PNG "Screenshot")
+![Screenshot](https://github.com/s4n7h0/hugo-theme-timeline/blob/main/images/screenshot.png "Screenshot")
 
 ### Demo - https://devilslab.in/timeline/
 
