@@ -11,14 +11,14 @@
 
     <section class="timeline">
       <div class="container" style="text-align: left!important">
-        {{ range .Pages.ByDate.Reverse  }} 
+        {{ range .Pages.ByDate.Reverse }} 
 
         <div class="timeline-item">
             <div class="timeline-img"></div>
 
             <div class="timeline-content js--fadeInLeft">
                 <h2><a href="{{.Permalink}}"><span class="post-title">{{.Title}}</span></a></h2>
-                <div class="date">{{ .Date.Format "Jan 2, 2006"}}</div>
+                <div class="date">{{ .Date.Format .Site.Params.dateform }}</div>
                 <p>
                     {{.Params.Eventname}}<br>
                     {{.Params.Eventlocation}}
